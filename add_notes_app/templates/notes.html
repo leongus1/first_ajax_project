@@ -1,0 +1,15 @@
+
+    {% for note in all_notes %}
+        <div id="title-div">
+            <h3>{{note.subject}}</h3>
+            <a href="" class="delete-link" note_id="{{note.id}}">Delete</a>
+        </div>
+        <form action="/update_note" method="post">
+            {% csrf_token %}
+            <!-- {{descForm}} -->
+            <textarea name="description" id="" cols="1" rows="2" placeholder="Enter note description here">{{note.description}}</textarea>
+            <input type="hidden" name="note_id" value={{note.id}}><br>
+          
+        </form>
+    {% endfor %}
+
