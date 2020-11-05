@@ -1,0 +1,22 @@
+#canvas{
+    width: 30%;
+    margin: auto;
+    /* text-align: center; */
+}
+
+#title-div{
+    display: flex;
+    margin: 5px auto;
+    justify-content: space-between;
+}
+
+textarea{
+    width: 100%;
+}
+
+.delete-link{
+    margin: auto 5px;
+}
+
+
+
