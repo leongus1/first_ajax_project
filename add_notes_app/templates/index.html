@@ -34,7 +34,7 @@
         <br><br>
         <form id='create' action="/" method="post">
             {% csrf_token %}
-            <div class="input-group mb-3">
+            <div class="input-group mb-3" id="mb3">
                 <input type="text" name="subject" placeholder="Insert Note Title here" id="title">
                 <div class="input-group-append">
                     <input type="submit" value="Add Note" id="new_note" class="btn btn-success">
